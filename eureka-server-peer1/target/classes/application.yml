@@ -1,0 +1,14 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: false

@@ -1,0 +1,22 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      zone1: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+      zone2: http://localhost:8763/eureka/,http://localhost:8764/eureka/
+    region: region-east
+    availability-zones: zone1,zone2
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+    metadata-map:
+       zone: zone1
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: false
+spring:
+  application:
+    name: eureka-server

@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: jd_route
+          uri: http://jd.com:80/
+          predicates:
+            - Path=/jd
+  application:
+    name: spring-cloud-gateway
+server:
+  port: 8080
+management:
+  endpoint:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false

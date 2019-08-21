@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native # 文件存储配置
+server:
+  port: 8088

@@ -1,0 +1,13 @@
+server:
+  port: 5555
+zuul:
+  routes:
+    client-a:
+      path: /client/**
+      serviceId: client-a
+  ratelimit:
+    key-prefix: springcloud-book # 按粒度拆分的临时变量key前缀
+    enabled: true # 启用开关
+    repository: IN_MEMORY #key存储类型，默认是IN_MEMORY
+    behind-proxy: true #表示代理之后
+    default-policy: #全局限流策略，可单独细化到服务粒度
