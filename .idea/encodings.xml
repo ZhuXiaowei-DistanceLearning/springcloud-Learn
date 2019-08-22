@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server-peer1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server-peer2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server-peer3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-zone1a" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-server" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

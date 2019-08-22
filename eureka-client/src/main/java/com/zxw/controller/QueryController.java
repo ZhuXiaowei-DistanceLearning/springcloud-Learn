@@ -1,11 +1,14 @@
 package com.zxw.controller;
 
+import com.sun.org.apache.bcel.internal.generic.RETURN;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.eureka.EurekaClientConfigBean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author zxw
@@ -19,5 +22,10 @@ public class QueryController {
     @GetMapping("/query")
     public Object getEurekaServerUrl() {
         return eurekaClientConfigBean.getServiceUrl();
+    }
+
+    @GetMapping("/add")
+    public String add(Integer a, Integer b, HttpServletRequest request) {
+        return "From Port:" + request.getServerPort() + ",Result:" + (a + b );
     }
 }

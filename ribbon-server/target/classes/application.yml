@@ -1,0 +1,15 @@
+server:
+  port: 7777
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka
+spring:
+  application:
+    name: ribbon-loadbalancer
+ribbon:
+  eager-load:
+    enabled: true
+    clients: client-a

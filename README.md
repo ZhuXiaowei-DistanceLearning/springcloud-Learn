@@ -1,18 +1,20 @@
 # SpringCloud教程
 
+
+
 ## 1.Eureka
 
 ### 1.1 Client端
 
 1. ![1566307391459](C:\Users\zxw\Desktop\个人项目笔记\SpringCloud教程.assets\1566307391459.png)
-2. ![1566307429515](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566307429515-1566395369207.png)
-3. ![1566307437933](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566307437933-1566395369207.png)
+2. ![1566307429515](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566307429515-1566482453498.png)
+3. ![1566307437933](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566307437933-1566482453498.png)
 
 ### 1.2 Server端
 
-1. ![1566307463470](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566307463470-1566395369207.png)
-2. ![1566307479418](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566307479418-1566395369207.png)
-3. ![1566307541474](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566307541474-1566395369207.png)
+1. ![1566307463470](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566307463470-1566482453498.png)
+2. ![1566307479418](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566307479418-1566482453498.png)
+3. ![1566307541474](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566307541474-1566482453499.png)
 
 ## 2.Zuul
 
@@ -30,7 +32,7 @@
       2. route:请求时被调用，适用灰度发布场景
       3. post:在route和error之后被调用，将请求路由到达具体的服务之后执行。适用于需要添加响应头，记录响应日志等场景
       4. error:处理请求时发生错误时被调用。在执行过程中发送错误时会进入error过滤器。
-      5. ![1566386001738](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566386001738-1566395369208.png)
+      5. ![1566386001738](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566386001738-1566482453499.png)
 
 2. 典型配置
 
@@ -112,7 +114,7 @@
       /?
       ```
 
-      ![1566388557106](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566388557106-1566395369208.png)
+      ![1566388557106](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566388557106-1566482453499.png)
 
 3. 功能配置
 
@@ -184,7 +186,7 @@
 
 4. 容错机制
 
-   1. ![1566386680753](C:\Users\zxw\Desktop\个人项目笔记\SpringCloud教程.assets\1566386680753.png)
+   1. ![1566386680753](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566386680753-1566482453499.png)
 
 5. 回退机制
 
@@ -198,8 +200,8 @@
 7. zuul+OAuth2.0+JWT
 
    1. OAuth2.0面向资源授权协议
-   2. ![1566390145458](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566390145458-1566395369208.png)
-   3. ![1566390189521](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566390189521-1566395369208.png)
+   2. ![1566390145458](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566390145458-1566482453499.png)
+   3. ![1566390189521](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566390189521-1566482453499.png)
    4. @EnableOAuth2Sso
 
 8. zuul限流
@@ -210,7 +212,7 @@
 
 9. 动态路由
 
-   1. ![1566391286396](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566391286396-1566395369208.png)
+   1. ![1566391286396](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566391286396-1566482453499.png)
 
 10. 灰度发布
 
@@ -231,8 +233,8 @@
 
 12. 请求体修改
 
-    1. ![1566391877126](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566391877126-1566395369208.png)
-    2. ![1566391917221](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566391917221-1566395369208.png)
+    1. ![1566391877126](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566391877126-1566482453499.png)
+    2. ![1566391917221](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566391917221-1566482453499.png)
 
 13. 使用okhttp替换HttpClient
 
@@ -291,9 +293,9 @@
 
 ### 2.1 多层负载
 
-1. ![1566392851162](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566392851162-1566395369208.png)
-2. ![1566392870314](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566392870314-1566395369209.png)
-3. ![1566392878747](C:\Users\zxw\Desktop\个人项目笔记\SpringCloud教程.assets\1566392878747.png)
+1. ![1566392851162](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566392851162-1566482453499.png)
+2. ![1566392870314](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566392870314-1566482453499.png)
+3. ![1566392878747](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566392878747-1566482453499.png)
 
 ### 2.2 应用优化
 
@@ -310,4 +312,121 @@
    3. 断言:java8中的断言函数。
    4. 过滤器:一个标准的Spring webFilter。springcloudgateway中的filter分为两种Gateway Filter和Global Filter
 2. 工作流程图
-   1. ![1566393822831](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566393822831-1566395369212.png)
+   1. ![1566393822831](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566393822831-1566482453499.png)
+
+## 4.Ribbon
+
+1. 定义
+
+   1. 集中式负载均衡
+   2. 进程式负载均衡:从实例库选取一个实例进行流量导入，客户端负载均衡
+   3. ![1566473904315](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566473904315-1566482453499.png)
+
+2. 负载均衡策略
+
+   1. ![1566475901062](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566475901062-1566482453499.png)
+
+   2. ![1566475912745](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566475912745-1566482453499.png)
+
+   3. 饥饿加载
+
+      1. ```yml
+         ribbon:  
+         	eager-load:    
+         	enabled: true    
+         	clients: client-a
+         
+         ```
+
+   4. 利用配置文件自定义Ribbon
+
+      1. ![1566476918325](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566476918325-1566482453499.png)
+
+### 4.1 核心工作原理
+
+1. ![1566476969959](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566476969959-1566482453499.png)
+
+## 5.Hystrix
+
+1. 定义
+   1. ![1566477524140](C:\Users\zxw\Desktop\个人项目笔记\SpringCloud教程.assets\1566477524140.png)
+   2. 通过客户端库对延迟和故障进行保护和控制
+   3. 在一个复杂的分布式系统中停止级联故障
+   4. 快速失败和迅速恢复
+   5. 在合理的情况下回退和优雅地降级
+   6. 开启近实时监控、告警和操作控制
+
+## 6.Feign
+
+1. 简介
+
+   1. 声明式的Web Service客户端
+   2. 声明式、模板化的HTTP客户端
+   3. 可插拔的注解主持，包括Feign注解和JAX-RS注解
+   4. 支持可插拔的HTTP编码器和解码器
+   5. 支持Hystrix和它的Fallback
+   6. 支持Ribbon的负载均衡
+   7. 支持HTTP请求和响应的压缩,整合了Ribbon和Hystrix
+
+2. 开启GZIP压缩
+
+   1. ```yml
+      feign:
+      	compression:
+      		request:
+      			enable: true
+      		mime-types: text/xml.application/xml,application/json #配置压缩支持的MIME TYPE
+      		min-request-size: 2048 #配置压缩数据大小的下限
+      		response:
+      			enable: true # 配置响应GZIP压缩
+      
+      ```
+
+      ![1566481604560](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481604560-1566482453499.png)
+
+3. 属性文件配置
+
+   1. ![1566481624772](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481624772-1566482453499.png)
+   2. ![1566481650941](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481650941-1566482453499.png)
+
+4. 开启日志
+
+   1. ![1566481699420](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481699420-1566482453499.png)
+
+5. 超时设置
+
+   1. Feign的调用分两层，即Ribbono的调用和Hystrix的调用，高版本的Hystrix默认是关闭的![1566481748576](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481748576-1566482453499.png)
+   2. ![1566481762013](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481762013-1566482453499.png)
+
+### 6.1 Feign默认Client的替换
+
+1. 默认使用URLConnection发送HTTP请求，没有连接池，但是对每一个地址会保持长连接
+2. 使用httpClient替换
+   1. 导入![1566481918333](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481918333-1566482453499.png)
+   2. ![1566481926090](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481926090-1566482453499.png)
+3. 使用okhttp替换
+   1. ![1566481942427](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481942427-1566482453500.png)
+   2. ![1566481951817](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481951817-1566482453500.png)
+   3. ![1566481970679](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566481970679-1566482453500.png)
+
+### 6.2 Feign的Post和Get的多参数传递
+
+1. ![1566482085435](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566482085435-1566482453500.png)
+
+### 6.3 文件上传
+
+1. ![1566482112576](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566482112576-1566482453500.png)
+
+### 6.4 首次请求失败问题
+
+1. ![1566482163677](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566482163677-1566482453500.png)
+
+### 6.5 返回图片流处理方式
+
+1. ![1566482214765](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566482214765-1566482453500.png)
+
+### 6.5 Feign调用传递Toekn
+
+1. ![1566482231428](C:\Users\zxw\Desktop\个人项目笔记\SpringCloud教程.assets\1566482231428.png)
+2. ![1566482241541](D:\code\IDEA CODE\springcloud-Learn\README.assets\1566482241541-1566482453500.png)
+
